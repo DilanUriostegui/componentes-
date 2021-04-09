@@ -40,6 +40,7 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _listaItems(List<dynamic> data, BuildContext context) {
     final List<Widget> opciones = [];
+
     data.forEach( (opt){
       final widgetTemp = ListTile(
         title: Text(opt['texto']),
@@ -50,6 +51,7 @@ class HomePage extends StatelessWidget {
 
           Navigator.pushNamed(context, opt['ruta']);
           
+          //Manda a llamar la ruta de AlertPage con cualquier click
           /*final route = MaterialPageRoute(
             builder: ( context ) => AlertPage()
           );

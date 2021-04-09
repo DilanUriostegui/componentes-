@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 //import 'package:componentes/src/home_temp.dart'
 //
 import 'package:componentes/src/routes/routes.dart';
+import 'package:componentes/src/pages/cart_page.dart';
 
-import 'package:componentes/src/pages/alert_page.dart';
+
 
 
 void main() => runApp(MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
 
         print ('Ruta llamada: ${ settings.name}');
         return MaterialPageRoute(
-          builder: (BuildContext context) => AlertPage()
+          builder: (BuildContext context) => CardPage()
         );
 
       },
